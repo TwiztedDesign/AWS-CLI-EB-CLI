@@ -1,9 +1,9 @@
 # action.yml
-name: 'AWS eb command'
+name: 'AWS CLI + EB commands'
 
-author: Matthias Le Brun
+author: Dan Burdetsky
 
-description: 'Provide eb cli commands'
+description: 'Provide aws/eb cli commands'
 
 branding:
   icon: 'terminal'  
