@@ -1,4 +1,4 @@
-# AWS eb command
+# AWS-CLI-EB-CLI commands
 
 ## Inputs
 
