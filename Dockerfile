@@ -10,10 +10,9 @@ RUN apt-get update -y
 
 RUN pip3 install --upgrade pip
 
-RUN pip3 install PyYAML --only-binary :all:
+RUN pip3 install PyYAML
 
-RUN pip3 install awsebcli cryptography==41.0.2
-
+RUN pip3 install awsebcli cryptography
 RUN pip3 --no-cache-dir install awscli==${AWSCLI_VERSION}
 
 RUN chmod +x entrypoint.sh
