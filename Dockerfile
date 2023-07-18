@@ -8,7 +8,7 @@ COPY entrypoint.sh /entrypoint.sh
 
 RUN apt-get update -y
 
-RUN pip install awsebcli cryptography==3.3.1
+RUN pip install awsebcli cryptography
 
 RUN pip3 --no-cache-dir install awscli==${AWSCLI_VERSION}
 
