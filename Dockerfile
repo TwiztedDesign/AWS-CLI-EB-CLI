@@ -1,7 +1,5 @@
 FROM python:3
 
-ENV AWSCLI_VERSION='1.18.69'
-
 ARG command="--version"
 
 COPY entrypoint.sh /entrypoint.sh
