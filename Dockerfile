@@ -10,9 +10,10 @@ RUN apt-get update -y
 
 RUN pip3 install --upgrade pip
 
-RUN pip3 install PyYAML
+RUN pip3 install PyYAML>=5.5
 
 RUN pip3 install awsebcli cryptography
+
 RUN pip3 --no-cache-dir install awscli==${AWSCLI_VERSION}
 
 RUN chmod +x entrypoint.sh
