@@ -1,4 +1,6 @@
-FROM python:3
+FROM python:3.1
+
+ENV AWSCLI_VERSION='2.0.6'
 
 ARG command="--version"
 
