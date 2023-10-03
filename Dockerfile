@@ -1,6 +1,6 @@
-FROM python:3.11
+FROM python:3.12
 
-ENV AWSCLI_VERSION='2.0.6'
+ENV AWSCLI_VERSION='2.13.23'
 
 ARG command="--version"
 
@@ -12,10 +12,14 @@ RUN pip3 install --upgrade pip
 
 RUN pip3 install PyYAML==5.3.1
 
-RUN pip3 install awsebcli cryptography
+RUN pip3 install cryptography awsebcli
 
-RUN pip3 --no-cache-dir install awscli 
+#RUN pip3 --no-cache-dir install awscli 
 #$==${AWSCLI_VERSION}
+
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+RUN unzip awscliv2.zip
+RUN sudo ./aws/install
 
 RUN chmod +x entrypoint.sh
 
