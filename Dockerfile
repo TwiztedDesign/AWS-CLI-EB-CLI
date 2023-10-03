@@ -12,7 +12,7 @@ RUN pip3 install --upgrade pip
 
 RUN pip3 install PyYAML==5.3.1
 
-RUN pip3 install cryptography #awsebcli
+RUN pip3 install cryptography awsebcli
 
 #RUN pip3 --no-cache-dir install awscli 
 #$==${AWSCLI_VERSION}
