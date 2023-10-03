@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.10
 
 ENV AWSCLI_VERSION='2.0.6'
 
