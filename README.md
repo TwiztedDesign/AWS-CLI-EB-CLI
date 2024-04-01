@@ -10,7 +10,7 @@
 
 
 ```YAML
-uses: ko3ak81/AWS-CLI-EB-CLI@v1.0.0
+uses: TwiztedDesign/AWS-CLI-EB-CLI@v1.0.1
 with:
   command: './bashscript.sh'
 env:
@@ -21,7 +21,7 @@ env:
 Or
 
 ```YAML
-uses: ko3ak81/AWS-CLI-EB-CLI@v1.0.0
+uses: TwiztedDesign/AWS-CLI-EB-CLI@v1.0.1
 with:
   command: 'eb deploy ${{ secrets.ENVIRONMENT_NAME }}'
 env:
